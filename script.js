@@ -10,6 +10,19 @@ const LAYOUT_CENTERS = {
     'DRD SKANDA ENCLAVE': [10.942, 76.808]
 };
 
+const LANDMARKS = [
+    { name: 'Isha Yoga Center 🕉️', coords: [10.9427, 76.6826] },
+    { name: 'Kovaipudur Road Junction', coords: [10.9161, 76.9248] }
+];
+
+const SIRUVANI_ROAD_PATH = [
+    [10.9161, 76.9248], // Entry
+    [10.9329, 76.8778],
+    [10.9442, 76.8322],
+    [10.9567, 76.7758],
+    [10.9427, 76.6826]  // Toward Isha
+];
+
 async function initMap() {
     // Center of all layouts approx
     const defaultCenter = [10.96, 76.85];
@@ -46,12 +59,14 @@ async function initMap() {
 
         loadLayoutList(data);
         plotMarkers(data);
+        plotLandmarks();
+        drawSiruvaniRoad();
         drawConnections(data);
 
         // Auto-center map to fit all points
         const validCoords = data.filter(d => d.coords).map(d => d.coords);
         if (validCoords.length > 0) {
-            map.fitBounds(L.latLngBounds(validCoords), { padding: [50, 50] });
+            map.fitBounds(L.latLngBounds([...validCoords, ...LANDMARKS.map(l => l.coords)]), { padding: [50, 50] });
         }
 
     } catch (e) {
@@ -100,6 +115,33 @@ function plotMarkers(data) {
         marker.on('click', () => focusLayout(item));
         markers.push({ name: item.name, marker });
     });
+}
+
+function plotLandmarks() {
+    const landmarkIcon = L.divIcon({
+        className: 'custom-marker',
+        html: '<div class="pin landmark-pin"></div>',
+        iconSize: [20, 20],
+        iconAnchor: [10, 20]
+    });
+
+    LANDMARKS.forEach(l => {
+        L.marker(l.coords, { icon: landmarkIcon }).addTo(map)
+            .bindTooltip(l.name, { 
+                permanent: true, 
+                direction: 'top', 
+                className: 'marker-tooltip landmark-tooltip' 
+            });
+    });
+}
+
+function drawSiruvaniRoad() {
+    L.polyline(SIRUVANI_ROAD_PATH, {
+        color: '#3498db',
+        weight: 6,
+        opacity: 0.4,
+        lineJoin: 'round'
+    }).addTo(map).bindTooltip("Siruvani Main Road 🛣️", { sticky: true, className: 'road-tooltip' });
 }
 
 function drawConnections(data) {
@@ -231,6 +273,22 @@ style.innerHTML = `
         border: 1px solid #d4af37;
         font-weight: 600;
         font-family: 'Outfit', sans-serif;
+    }
+    .landmark-pin {
+        background: #9b59b6 !important;
+        width: 12px !important;
+        height: 12px !important;
+    }
+    .landmark-tooltip {
+        color: #fff !important;
+        border-color: #9b59b6 !important;
+    }
+    .road-tooltip {
+        background: #34495e;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 4px 8px;
     }
 `;
 document.head.appendChild(style);
