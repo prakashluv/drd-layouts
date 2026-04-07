@@ -107,9 +107,10 @@ function plotMarkers(data) {
         
         const marker = L.marker(item.coords, { icon: customIcon }).addTo(map);
         marker.bindTooltip(item.name, { 
-            permanent: false, 
+            permanent: true, 
             direction: 'top', 
-            className: 'marker-tooltip' 
+            offset: [0, -25],
+            className: 'marker-tooltip layout-tooltip' 
         });
         
         marker.on('click', () => focusLayout(item));
