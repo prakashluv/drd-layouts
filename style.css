@@ -260,6 +260,33 @@ h1 {
     width: 24px;
     height: 24px;
 }
+
+.wa-right-float {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2005;
+    background: #25d366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 0 20px rgba(37, 211, 102, 0.4);
+    transition: var(--transition);
+}
+
+.wa-right-float:hover {
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 8px 32px rgba(37, 211, 102, 0.6);
+}
+
+.wa-right-float img {
+    width: 35px;
+    height: 35px;
+}
     top: 15px;
     right: 20px;
     background: none;
