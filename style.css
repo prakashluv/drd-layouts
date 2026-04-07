@@ -192,40 +192,45 @@ h1 {
 
 .contact-card {
     padding: 20px;
-    background: #252525;
-    margin: 10px 20px 20px 20px;
+    background: rgba(201, 166, 107, 0.05);
+    margin: 20px;
     border-radius: 12px;
-    border: 1px solid var(--primary-dark);
+    border: 1px solid rgba(201, 166, 107, 0.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .contact-card h4 {
     color: var(--primary);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-bottom: 12px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
 .contact-link {
-    color: #fff;
+    color: var(--text-main);
     text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 500;
+    font-size: 1.05rem;
+    font-weight: 600;
     transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .contact-link:hover {
     color: var(--primary);
+    transform: translateX(5px);
 }
 
 .wa-link {
-    color: #25d366;
+    color: #25d366 !important;
 }
 
 #wa-float {
