@@ -21,7 +21,10 @@
     "available_count": 24,
     "price_range": "46L - 84L",
     "total_area": 44137,
-    "coords": null,
+    "coords": [
+      10.9668608,
+      76.8337816
+    ],
     "images": []
   },
   {
@@ -43,8 +46,8 @@
     "price_range": "34L - 40L",
     "total_area": 8020,
     "coords": [
-      10.9552864,
-      76.8925967
+      10.9552917,
+      76.8900218
     ],
     "images": []
   },
@@ -55,8 +58,8 @@
     "price_range": "42L - 76L",
     "total_area": 16789,
     "coords": [
-      10.9606801,
-      76.8845498
+      10.9620978,
+      76.8831104
     ],
     "images": []
   },
@@ -66,7 +69,10 @@
     "available_count": 51,
     "price_range": "34L - 63L",
     "total_area": 82299,
-    "coords": null,
+    "coords": [
+      10.9632537,
+      76.8194371
+    ],
     "images": [
       "Layout_Images/DRD Skanda Enclave/Skanda Main Ent SideView.jpeg",
       "Layout_Images/DRD Skanda Enclave/Skanda Main Entrance.jpeg",
@@ -74,19 +80,7 @@
       "Layout_Images/DRD Skanda Enclave/Skanda Prelaunch Pamplet 2.jpeg",
       "Layout_Images/DRD Skanda Enclave/Skanda View 1.jpeg",
       "Layout_Images/DRD Skanda Enclave/Skanda View 2.jpeg",
-      "Layout_Images/DRD Skanda Enclave/Skanda View 3.jpeg",
-      "Layout_Images/DRD Skanda Enclave/Snap 1.jpeg",
-      "Layout_Images/DRD Skanda Enclave/Snap 10.jpeg",
-      "Layout_Images/DRD Skanda Enclave/Snap 11.jpeg",
-      "Layout_Images/DRD Skanda Enclave/Snap 12.jpeg",
-      "Layout_Images/DRD Skanda Enclave/Snap 2.jpeg",
-      "Layout_Images/DRD Skanda Enclave/Snap 3.jpeg",
-      "Layout_Images/DRD Skanda Enclave/Snap 4.jpeg",
-      "Layout_Images/DRD Skanda Enclave/Snap 5.jpeg",
-      "Layout_Images/DRD Skanda Enclave/Snap 6.jpeg",
-      "Layout_Images/DRD Skanda Enclave/Snap 7.jpeg",
-      "Layout_Images/DRD Skanda Enclave/Snap 8.jpeg",
-      "Layout_Images/DRD Skanda Enclave/Snap 9.jpeg"
+      "Layout_Images/DRD Skanda Enclave/Skanda View 3.jpeg"
     ]
   },
   {
@@ -96,8 +90,8 @@
     "price_range": "25L - 64L",
     "total_area": 36007,
     "coords": [
-      10.943449,
-      76.8641757
+      10.9544847,
+      76.8601452
     ],
     "images": []
   }

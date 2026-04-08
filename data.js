@@ -31,8 +31,8 @@ const LAYOUT_DATA = [
     "price_range": "46L - 84L",
     "total_area": 44137,
     "coords": [
-      10.95,
-      76.85
+      10.9668608,
+      76.8337816
     ],
     "images": [
       "Layout_Images/DRD Baladhandayudhabani/Bala Front View.jpeg",
@@ -81,8 +81,8 @@ const LAYOUT_DATA = [
     "price_range": "34L - 40L",
     "total_area": 8020,
     "coords": [
-      10.9552864,
-      76.8925967
+      10.9552917,
+      76.8900218
     ],
     "images": [
       "Layout_Images/03 House Models/Actual Output.jpeg",
@@ -104,8 +104,8 @@ const LAYOUT_DATA = [
     "price_range": "42L - 76L",
     "total_area": 16789,
     "coords": [
-      10.9606801,
-      76.8845498
+      10.9620978,
+      76.8831104
     ],
     "images": [
       "Layout_Images/03 House Models/Actual Output.jpeg",
@@ -127,8 +127,8 @@ const LAYOUT_DATA = [
     "price_range": "34L - 63L",
     "total_area": 82299,
     "coords": [
-      10.942,
-      76.808
+      10.9632537,
+      76.8194371
     ],
     "images": [
       "Layout_Images/DRD Skanda Enclave/Skanda Main Ent SideView.jpeg",
@@ -157,8 +157,8 @@ const LAYOUT_DATA = [
     "price_range": "25L - 64L",
     "total_area": 36007,
     "coords": [
-      10.943449,
-      76.8641757
+      10.9544847,
+      76.8601452
     ],
     "images": [
       "Layout_Images/03 House Models/Actual Output.jpeg",
