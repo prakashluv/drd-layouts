@@ -21,7 +21,6 @@ const LAYOUT_DATA = [
       "Layout_Images/03 House Models/Top View.jpeg"
     ],
     "plans": [
-      "Layout_Images/DRD Anisam/DEVARAYAPURAM MARKETING PLAN (1) (1).pdf",
       "Layout_Images/01 All Layouts/DRD ANISAM DEVARAYAPURAM PLAN.pdf"
     ]
   },
